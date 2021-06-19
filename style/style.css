@@ -1,0 +1,237 @@
+@import "fonts.css";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1110px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.header__nav-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+    flex-wrap: wrap;
+}
+
+.header__nav-list a {
+    font-size: 18px;
+    color: #bab9b9;
+    font-family: "RR";
+    margin-left: 48px;
+    line-height: 18px;
+}
+
+.header__nav-list a:hover {
+    color: #4581b7;
+    border-bottom: 2px solid #4581b7;
+    padding-bottom: 14px;
+    transition: 500ms;
+}
+
+.header-images {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header__img {
+    margin-top: 66px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.main__left-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    max-width: 730px;
+    width: 100%;
+    padding: 49px 98px 71px 40px;
+    background: #f0f0f0;
+}
+
+.right {
+    max-width: 350px;
+    width: 100%;
+    padding: 49px 54px 182px 40px;
+    background: #f0f0f0;
+}
+
+.main__left-title {
+    color: #4581b7;
+    font-size: 20px;
+    line-height: 15px;
+    font-family: "RB";
+    margin-bottom: 25px;
+}
+
+.main__left-text {
+    font-size: 16px;
+    font-family: "RR";
+    color: #7f7f7f;
+    line-height: 28px;
+}
+
+.main__right-title {
+    color: #4581b7;
+    font-size: 20px;
+    font-family: "RB";
+    line-height: 15px;
+    margin-bottom: 28px;
+}
+
+.main__right-text {
+    color: #7f7f7f;
+    font-size: 16px;
+    font-family: "RR";
+    line-height: 28px;
+    margin-bottom: 48px;
+}
+
+.footer__text {
+    font-size: 16px;
+    font-family: "RR";
+    line-height: 12px;
+    color: #808080;
+    margin-bottom: 15px;
+}
+
+.footer__number {
+    font-size: 25px;
+    font-family: "RB";
+    line-height: 19px;
+    text-align: right;
+    color: #808080;
+}
+
+footer .container {
+    margin-top: 30px;
+    background: #f0f0f0;
+    padding: 15px 40px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media(max-width: 1080px) {
+    .main__left-right {
+        background: #f0f0f0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left {
+        padding: 40px 0;
+    }
+    .right {
+        padding: 0;
+        padding-bottom: 10px;
+        max-width: 700px;
+    }
+    .main__left-title {
+        text-align: center;
+    }
+    .main__left-text {
+        text-align: center;
+    }
+    .main__right-title {
+        text-align: center;
+    }
+    .main__right-text {
+        text-align: center;
+    }
+    .main__right-text:nth-of-type(1) {
+        margin-bottom: 15px;
+    }
+    .main__right-text:nth-of-type(2) {
+        margin-bottom: 15px;
+    }
+    .main__right-text:nth-of-type(3) {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 886px) {
+    .header__nav-link {
+        margin-top: 25px;
+    }
+    .header__nav-list a:hover {
+        padding-bottom: 3px;
+    }
+    header {
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 620px) {
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo2 {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 546px) {
+    .header__nav-list a {
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .header__nav-list {
+        margin-top: 25px;
+    }
+    .footer__text {
+        font-size: 14px;
+    }
+    .footer__number {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 393px) {
+    .main__left-title,
+    .main__right-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .main__right-text,
+    .main__left-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .left,
+    .right {
+        padding: 20px 0;
+    }
+}
